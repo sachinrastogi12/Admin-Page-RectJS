@@ -95,13 +95,13 @@ function Apps() {
     <div className="featured">
       <div className="title">ASN Complete Lifecycle</div>
       <div className="all" style={{color:"Gray"}}><p>All bucket events</p></div>
-    <PieChart width={600} height={400}>
+    <PieChart width={600} height={300}>
       <Pie
         activeIndex={activeIndex}
         activeShape={renderActiveShape}
         data={data}
         cx={200}
-        cy={200}
+        cy={100}
         innerRadius={60}
         outerRadius={80}
         fill="#8884d8"
@@ -109,6 +109,8 @@ function Apps() {
         onMouseEnter={onPieEnter}
       />
     </PieChart>
+    
+    
 
     </div>
   );

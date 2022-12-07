@@ -89,7 +89,7 @@ const Chart = ({ aspect, title }) => {
       </select>
 
       
-      <ResponsiveContainer width="100%" height="40%" aspect={5/1}>
+      <ResponsiveContainer width="100%" height="40%" aspect={3/1}>
         <ComposedChart
           width={400}
           height={400}

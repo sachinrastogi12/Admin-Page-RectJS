@@ -4,7 +4,6 @@ import "./home.scss";
 import Featured from "../../components/featured/Featured";
 import Chart from "../../components/chart/Chart";
 import SecondChart from "../../components/secondchart/secondchart";
-
 const Home = () => {
   return (
     <div className="home">
@@ -17,9 +16,11 @@ const Home = () => {
        
         </div >
         <div className="listContainer">
-          <div className="listTitle">Latest Transactions</div>
           <SecondChart title="Zone-Wise" />
 
+        </div>
+        <div>
+        
         </div>
       </div>
     </div>

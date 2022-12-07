@@ -35,9 +35,13 @@ const Navbar = () => {
             <div className="counter">20</div>
           </div>
         
-          <div className="item">
-            <p>TurnigCloud-Supplymint</p>
+          <div className="item" >
+            <p >TurnigCloud-Supplymint <br />Demo Account</p>
+
+            
           </div>
+          
+
         </div>
       </div>
     </div>

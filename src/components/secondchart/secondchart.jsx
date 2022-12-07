@@ -19,60 +19,62 @@ import {
 
 const data = [
   {
-    name: 'Bhiwandi',
+    name: 'Kamla Textiles',
     Actual: 1800,
     Expected: 800,
     amt: 1400,
   },
   {
-    name: 'Daman',
+    name: 'Fashion House',
     Actual: 868,
     Expected: 1400,
     amt: 1506,
   },
   {
-    name: 'Jaipur',
+    name: 'Ananya Handicraft',
     Actual: 1397,
     Expected: 700,
     amt: 989,
   },
   {
-    name: 'Mumbai',
+    name: 'Iraa Clothing Pvt...',
     Actual: 1480,
     Expected: 1500,
     amt: 1228,
   },
   {
-    name: 'Tirupur',
+    name: 'Shri Shaantidurga',
     Actual: 1520,
     Expected: 408,
     amt: 1100,
   },
   {
-    name: 'Vapi',
+    name: 'Kyara Creations',
     Actual: 2400,
     Expected: 1200,
     amt: 1700,
   },
  { 
-  name: 'Delhi',
+  name: 'SDS Fashion',
   Actual: 1000,
   Expected: 400,
   amt: 1700,
 },
 {
-name: 'Kolkata',
+name: 'Mat Clothing Pvt...',
 Actual: 2000,
 Expected: 680,
 amt: 1700,
 },
 
 {
-  name: 'Nagpur',
+  name: 'Krishna Beads...',
   Actual: 1400,
   Expected: 680,
   amt: 1700,
   },
+
+  
 ];
 
 
@@ -83,7 +85,7 @@ const SecondChart = ({ aspect, title }) => {
       <div className="titles">ASN Lifecycle</div>
       <div className="compactgraph"> Compact Graph <Switch inputProps={{ 'aria-label': 'Switch A'}} /> </div>
     
-      <select className="selects">
+      <select className="selectss" style={{position:"relative", left: "73rem", bottom:"1.8rem"}}>
         <MenuItem value={1}>ASB Approval</MenuItem>
         <MenuItem value={2}>ASB Not Approval</MenuItem>
       </select>
