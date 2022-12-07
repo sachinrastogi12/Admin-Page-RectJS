@@ -13,7 +13,12 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="wrapper">
-      <p>Supplymint</p>
+      <p>𝐒𝐮𝐩𝐩𝐥𝐲𝐦𝐢𝐧𝐭
+ <br/>
+      Home > 𝐀𝐧𝐚𝐥𝐲𝐭𝐢𝐜𝐬
+      </p>
+
+      
           <div className="search">
           <input type="text" placeholder="Search..." />
           <SearchOutlinedIcon />
@@ -45,6 +50,7 @@ const Navbar = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 
