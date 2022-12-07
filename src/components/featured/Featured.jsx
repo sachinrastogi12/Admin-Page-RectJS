@@ -12,6 +12,7 @@ const Featured = () => {
         <h1 className="title">ASN Complete Lifecycle</h1>
         <MoreVertIcon fontSize="small" />
       </div>
+     <div className="all">All bucket events</div>
       <div className="bottom">
         <div className="featuredChart">
           <CircularProgressbar value={70} text={"70%"} strokeWidth={5} />
