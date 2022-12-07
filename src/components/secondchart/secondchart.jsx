@@ -1,4 +1,4 @@
-import "./chart.scss";
+
 import {Box, FormControlLabel, Switch, FormControl, InputLabel } from '@mui/material'
 import { positions, style } from "@mui/system";
 import {Select, MenuItem} from "@mui/material";
@@ -76,7 +76,7 @@ amt: 1700,
 ];
 
 
-const Chart = ({ aspect, title }) => {
+const SecondChart = ({ aspect, title }) => {
   return (
     <div className="chart">
       <div className="title" >Zone Wise</div>
@@ -116,4 +116,4 @@ const Chart = ({ aspect, title }) => {
   
 };
 
-export default Chart;
+export default SecondChart;
