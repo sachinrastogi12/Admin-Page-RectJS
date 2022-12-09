@@ -15,6 +15,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from 'recharts';
+import { LineWeight } from '@mui/icons-material';
 
 
 const data = [
@@ -80,15 +81,8 @@ amt: 1700,
 
 const SecondChart = ({ aspect, title }) => {
   return (
-    <div className="chart">
-      <div className="title" >Zone Wise</div>
-      <div className="titles">ASN Lifecycle</div>
-      <div className="compactgraph"> Compact Graph <Switch inputProps={{ 'aria-label': 'Switch A'}} /> </div>
-    
-      <select className="selectss" style={{position:"relative", left: "73rem", bottom:"1.8rem"}}>
-        <MenuItem value={1}>ASB Approval</MenuItem>
-        <MenuItem value={2}>ASB Not Approval</MenuItem>
-      </select>
+    <div className="charts">
+      
 
       
       <ResponsiveContainer width="100%" height="40%" aspect={5/1}>
@@ -112,6 +106,10 @@ const SecondChart = ({ aspect, title }) => {
           <Line type="monotone" dataKey="Expected" stroke="#ff7304" />
         </ComposedChart>
       </ResponsiveContainer>
+      <strong>Vendor </strong> 
+      <div className="titless" style={{color:"gray"}}>ASN Lifecycle</div>
+      <div className="compactgraphs"> Compact Graph <Switch inputProps={{ 'aria-label': 'Switch A'}} /> </div>
+    
       
     </div>
   );

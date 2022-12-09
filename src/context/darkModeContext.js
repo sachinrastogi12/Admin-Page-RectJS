@@ -11,8 +11,10 @@ export const DarkModeContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(DarkModeReducer, INITIAL_STATE);
 
   return (
-    <DarkModeContext.Provider value={{ darkMode: state.darkMode, dispatch }}>
+    <DarkModeContext.Provider value={{ darkMode: state.darkMode, dispatch }}> 
       {children}
     </DarkModeContext.Provider>
   );
 };
+
+//disp=fun, disp LIGHT_MODE OR disp DARK_MODE

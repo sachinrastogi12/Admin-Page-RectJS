@@ -1,4 +1,4 @@
-
+import "./featured.scss";
 import React, { useCallback, useState } from "react";
 import { PieChart, Pie, Sector } from "recharts";
 

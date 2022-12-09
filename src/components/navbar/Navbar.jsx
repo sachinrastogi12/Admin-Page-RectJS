@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="wrapper">
       <p>𝐒𝐮𝐩𝐩𝐥𝐲𝐦𝐢𝐧𝐭
  <br/>
-      Home > 𝐀𝐧𝐚𝐥𝐲𝐭𝐢𝐜𝐬
+      Analytics
       </p>
 
       
