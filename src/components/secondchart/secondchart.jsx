@@ -1,21 +1,8 @@
-
+import './secondchart.css';
 import {Box, FormControlLabel, Switch, FormControl, InputLabel } from '@mui/material'
-import { positions, style } from "@mui/system";
 import {Select, MenuItem} from "@mui/material";
 import React, { PureComponent } from 'react';
-import {
-  ComposedChart,
-  Line,
-  Area,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-  ResponsiveContainer,
-} from 'recharts';
-import { LineWeight } from '@mui/icons-material';
+import { ComposedChart, Line, Area, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer} from 'recharts';
 
 
 const data = [
@@ -62,19 +49,18 @@ const data = [
   amt: 1700,
 },
 {
-name: 'Mat Clothing Pvt...',
-Actual: 2000,
-Expected: 680,
-amt: 1700,
+  name: 'Mat Clothing Pvt...',
+  Actual: 2000,
+  Expected: 680,
+  amt: 1700,
 },
-
 {
   name: 'Krishna Beads...',
   Actual: 1400,
   Expected: 680,
   amt: 1700,
   },
-
+  
   
 ];
 
@@ -82,35 +68,24 @@ amt: 1700,
 const SecondChart = ({ aspect, title }) => {
   return (
     <div className="charts">
+      <div className="title">Vendor</div>
+      <div className="all">ASN Lifecycle</div>
+      <div className="compactgraph"> Compact Graph <Switch inputProps={{ 'aria-label': 'Switch A'}} /> </div>
       
+      <div >
+        <ResponsiveContainer aspect={5/1}>
+          <ComposedChart data={data}>
+            <CartesianGrid stroke="#f5f5f5" />
+            <XAxis dataKey="name" scale="band" />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+            <Bar dataKey="Actual" barSize={6} fill="#413ea0" />
+            <Line type="monotone" dataKey="Expected" stroke="#ff7304" />
+          </ComposedChart>
+        </ResponsiveContainer>
+      </div>
 
-      
-      <ResponsiveContainer width="100%" height="40%" aspect={5/1}>
-        <ComposedChart
-          width={400}
-          height={400}
-          data={data}
-          margin={{
-            top: 20,
-            right: 20,
-            bottom: 20,
-            left: 20,
-          }}
-        >
-          <CartesianGrid stroke="#f5f5f5" />
-          <XAxis dataKey="name" scale="band" />
-          <YAxis />
-          <Tooltip />
-          <Legend />
-          <Bar dataKey="Actual" barSize={6} fill="#413ea0" />
-          <Line type="monotone" dataKey="Expected" stroke="#ff7304" />
-        </ComposedChart>
-      </ResponsiveContainer>
-      <strong>Vendor </strong> 
-      <div className="titless" style={{color:"gray"}}>ASN Lifecycle</div>
-      <div className="compactgraphs"> Compact Graph <Switch inputProps={{ 'aria-label': 'Switch A'}} /> </div>
-    
-      
     </div>
   );
   

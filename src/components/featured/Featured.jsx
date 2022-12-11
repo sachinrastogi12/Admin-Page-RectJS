@@ -1,4 +1,4 @@
-import "./featured.scss";
+import "./featured.css";
 import React, { useCallback, useState } from "react";
 import { PieChart, Pie, Sector } from "recharts";
 
@@ -6,7 +6,7 @@ const data = [
   { name: "ASN Approval", value: 336 },
   { name: "GRN", value: 336 },
   { name: "Pickup Request", value: 336 },
-  { name: "Transit Time", value: 192 }
+  { name: "Transit Time", value: 192 },
 ];
 
 const renderActiveShape = (props) => {
@@ -22,7 +22,7 @@ const renderActiveShape = (props) => {
     fill,
     payload,
     percent,
-    value
+    value,
   } = props;
   const sin = Math.sin(-RADIAN * midAngle);
   const cos = Math.cos(-RADIAN * midAngle);
@@ -39,24 +39,8 @@ const renderActiveShape = (props) => {
       <text x={cx} y={cy} dy={8} textAnchor="middle" fill={fill}>
         {payload.name}
       </text>
-      <Sector
-        cx={cx}
-        cy={cy}
-        innerRadius={innerRadius}
-        outerRadius={outerRadius}
-        startAngle={startAngle}
-        endAngle={endAngle}
-        fill={fill}
-      />
-      <Sector
-        cx={cx}
-        cy={cy}
-        startAngle={startAngle}
-        endAngle={endAngle}
-        innerRadius={outerRadius + 6}
-        outerRadius={outerRadius + 10}
-        fill={fill}
-      />
+      <Sector cx={cx} cy={cy} innerRadius={innerRadius} outerRadius={outerRadius} startAngle={startAngle} endAngle={endAngle} fill={fill} />
+      <Sector cx={cx} cy={cy} startAngle={startAngle} endAngle={endAngle} innerRadius={outerRadius + 6} outerRadius={outerRadius + 10} fill={fill} />
       <path
         d={`M${sx},${sy}L${mx},${my}L${ex},${ey}`}
         stroke={fill}
@@ -82,7 +66,7 @@ const renderActiveShape = (props) => {
   );
 };
 
-function Apps() {
+function Featured() {
   const [activeIndex, setActiveIndex] = useState(0);
   const onPieEnter = useCallback(
     (_, index) => {
@@ -94,26 +78,27 @@ function Apps() {
   return (
     <div className="featured">
       <div className="title">ASN Complete Lifecycle</div>
-      <div className="all" style={{color:"Gray"}}><p>All bucket events</p></div>
-    <PieChart width={600} height={300}>
-      <Pie
-        activeIndex={activeIndex}
-        activeShape={renderActiveShape}
-        data={data}
-        cx={200}
-        cy={100}
-        innerRadius={60}
-        outerRadius={80}
-        fill="#8884d8"
-        dataKey="value"
-        onMouseEnter={onPieEnter}
-      />
-    </PieChart>
-    
-    
+      <div className="all" ><p>All bucket events</p></div>
 
+      <div className="piechart_div">
+        <PieChart width={400} height={300}>
+          <Pie
+            activeIndex={activeIndex}
+            activeShape={renderActiveShape}
+            data={data}
+            // cx={200}
+            // cy={100}
+            innerRadius={60}
+            outerRadius={80}
+            fill="#8884d8"
+            dataKey="value"
+            onMouseEnter={onPieEnter}
+          />
+        </PieChart>
+      </div>
+      
     </div>
   );
 }
 
-export default Apps;
+export default Featured;

@@ -1,12 +1,11 @@
 .app.dark {
-  background-color: #111;
+  background-color: rgb(26, 26, 26);
   color: rgb(156, 156, 156);
 
   .chartGrid {
     stroke: rgba(228, 228, 228, 0.219);
   }
 
-  
   .navbar {
     color: #999;
     border-color: #333;
@@ -14,11 +13,7 @@
     .search {
       border-color: gray;
     }
-  
 
-  
-
-    
     hr {
       border-color: #333;
     }
@@ -36,7 +31,12 @@
     }
   }
 
- 
+ .title{
+  color: #d5d5d5;
+ }
+ .all{
+  color: rgb(139 139 139);
+}
 
   input{
       background-color: transparent;

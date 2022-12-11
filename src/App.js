@@ -11,15 +11,7 @@ function App() {
     <div className={darkMode ? "app dark" : "app"}>
       <BrowserRouter>
         <Routes>
-          <Route path="/">
-            <Route index element={<Home />} />
-            <Route path="users">
-             
-            </Route>
-            <Route path="products">
-       
-            </Route>
-          </Route>
+            <Route path="/" index element={<Home />} />
         </Routes>
       </BrowserRouter>
     </div>

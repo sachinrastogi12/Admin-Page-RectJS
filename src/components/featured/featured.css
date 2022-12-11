@@ -1,0 +1,33 @@
+.featured {
+  /* box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47); */
+  padding: 0.5% 1%;
+  margin: 1vh 1vw;
+  /* border: 3px dotted; */
+  /* background-color: yellow; */
+  box-shadow: 0 2px 10px 1px rgb(0 0 0 / 30%);
+}
+
+.title {
+  font-size: 17px;
+  color: black;
+  font-weight: 700;
+}
+
+.all {
+  font-size: 15px;
+  color: rgb(92, 86, 86);
+}
+
+.piechart_div{
+  display: flex;
+  /* border: 3px solid red; */
+  /* height: 40vh; */
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10%;
+}
+
+
+
+

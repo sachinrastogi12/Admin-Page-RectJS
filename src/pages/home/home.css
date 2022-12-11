@@ -1,0 +1,30 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  /* background-color: cadetblue; */
+}
+
+.navbar_div {
+  /* border: 3px solid rgb(255, 0, 183); */
+}
+
+.charts_div {
+  /* border: 3px solid green; */
+  /* gap: 20px; */
+  /* padding: 5px 20px; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 40%;
+  justify-content: space-evenly;
+  /* background-color: chartreuse; */
+}
+
+.second_Charts_div {
+  box-shadow: 0 4px 10px 1px rgb(0 0 0 / 30%);
+  margin: 1vh 1.5vw;
+  margin-bottom: 2vh;
+  padding: 0.5% 1%;
+  /* border: 3px solid purple; */
+  /* background-color: crimson; */
+}
