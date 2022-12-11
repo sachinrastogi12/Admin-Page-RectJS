@@ -1,3 +1,3 @@
 # Admin-Page-RectJS
 
-* (https://gentle-kashata-373af7.netlify.app/)[Live Demo]
+* [link](https://gentle-kashata-373af7.netlify.app/)
