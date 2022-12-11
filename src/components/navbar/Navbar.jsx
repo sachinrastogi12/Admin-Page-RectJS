@@ -12,8 +12,10 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="wrapper">
-        <p> 𝐒𝐮𝐩𝐩𝐥𝐲𝐦𝐢𝐧𝐭 <br /> Analytics</p>
-
+        <div style={{color : "black"}}>
+        <div className="Supplymint"> Supplymint</div> 
+        <div className="Analytics">Analytics</div>
+        </div>
         <div className="search">
           <SearchOutlinedIcon />
           <input type="text" placeholder="Search..." />
